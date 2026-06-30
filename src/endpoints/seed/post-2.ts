@@ -1,7 +1,7 @@
 import { RequiredDataFromCollectionSlug } from 'payload'
 import type { PostArgs } from './post-1'
 
-export const post2: (args: PostArgs) => RequiredDataFromCollectionSlug<'posts'> = ({
+export const post2: (args: PostArgs) => RequiredDataFromCollectionSlug<'blogs'> = ({
   heroImage,
   blockImage,
   author,
@@ -226,7 +226,6 @@ export const post2: (args: PostArgs) => RequiredDataFromCollectionSlug<'posts'> 
       image: heroImage.id,
       title: 'Global Gaze: Beyond the Headlines',
     },
-    relatedPosts: [], // this is populated by the seed script
     title: 'Global Gaze: Beyond the Headlines',
   }
 }
